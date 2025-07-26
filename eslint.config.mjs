@@ -3,6 +3,7 @@ import globals from 'globals';
 import tseslint from 'typescript-eslint';
 import unusedImports from 'eslint-plugin-unused-imports';
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
+import reactHooks from 'eslint-plugin-react-hooks';
 
 export default tseslint.config([
   {
@@ -28,13 +29,18 @@ export default tseslint.config([
   },
 
   {
-    plugins: {
-      'unused-imports': unusedImports,
-    },
+    plugins: { 'unused-imports': unusedImports },
     rules: {
       'no-unused-vars': 'off',
       'unused-imports/no-unused-imports': 'warn',
       'unused-imports/no-unused-vars': 'warn',
+    },
+  },
+  {
+    files: ['**/*.{ts,tsx}'],
+    plugins: { 'react-hooks': reactHooks },
+    rules: {
+      'react-hooks/rules-of-hooks': 'warn',
     },
   },
   eslintPluginPrettierRecommended,

@@ -2345,12 +2345,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"packages@workspace:packages":
-  version: 0.0.0-use.local
-  resolution: "packages@workspace:packages"
-  languageName: unknown
-  linkType: soft
-
 "parent-module@npm:^1.0.0":
   version: 1.0.1
   resolution: "parent-module@npm:1.0.1"
@@ -2493,6 +2487,7 @@ __metadata:
     eslint: "npm:^9.31.0"
     eslint-config-prettier: "npm:^10.1.8"
     eslint-plugin-prettier: "npm:^5.5.3"
+    eslint-plugin-react-hooks: "npm:^5.2.0"
     eslint-plugin-unused-imports: "npm:^4.1.4"
     globals: "npm:^16.3.0"
     prettier: "npm:^3.6.2"
@@ -2917,6 +2912,20 @@ __metadata:
   checksum: 10c0/4ef57b45aa820d7ac6496e9208559986c665e49447cb072744c13b66925a362d96dd5a46c4530a6b8e203e5db5fe849369444440cb22ecfc26c679359e5dfa3c
   languageName: node
   linkType: hard
+
+"vite-project@workspace:packages":
+  version: 0.0.0-use.local
+  resolution: "vite-project@workspace:packages"
+  dependencies:
+    "@types/react": "npm:^19.1.8"
+    "@types/react-dom": "npm:^19.1.6"
+    "@vitejs/plugin-react": "npm:^4.6.0"
+    react: "npm:^19.1.0"
+    react-dom: "npm:^19.1.0"
+    typescript: "npm:~5.8.3"
+    vite: "npm:^7.0.4"
+  languageName: unknown
+  linkType: soft
 
 "vite@npm:^7.0.4":
   version: 7.0.5
