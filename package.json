@@ -1,5 +1,5 @@
 {
-  "name": "react-palette-kit",
+  "name": "root",
   "packageManager": "yarn@4.9.2",
   "private": true,
   "workspaces": [
