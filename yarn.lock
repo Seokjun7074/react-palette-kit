@@ -1823,6 +1823,7 @@ __metadata:
     eslint-plugin-react-refresh: "npm:^0.4.20"
     react: "npm:^19.1.0"
     react-dom: "npm:^19.1.0"
+    react-palette-kit: "workspace:*"
     typescript: "npm:~5.8.3"
     vite: "npm:^7.0.4"
   languageName: unknown
@@ -2834,7 +2835,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-palette-kit@workspace:packages":
+"react-palette-kit@workspace:*, react-palette-kit@workspace:packages":
   version: 0.0.0-use.local
   resolution: "react-palette-kit@workspace:packages"
   dependencies:
